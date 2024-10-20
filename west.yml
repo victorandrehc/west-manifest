@@ -16,6 +16,12 @@ manifest:
       path: zephyr
       west-commands: scripts/west-commands.yml
   
+  #libs
+    - name: telemetry_lib
+      repo-path: telemetry_lib.git
+      revision: main
+      path: libs/telemetry
+  
   #apps
     - name: telemetry_sample
       repo-path: telemetry_sample.git
