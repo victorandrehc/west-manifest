@@ -16,6 +16,13 @@ manifest:
       path: zephyr
       west-commands: scripts/west-commands.yml
   
+  #apps
+    - name: telemetry_sample
+      repo-path: telemetry_sample.git
+      revision: main
+      path: apps/telemetry_sample
+  
+  
   self:
     path: manifests/victorandrehc-manifest
 
