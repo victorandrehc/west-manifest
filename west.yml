@@ -1,0 +1,21 @@
+manifest:
+  defaults:
+    remote: github
+    revision: main
+  
+  remotes:
+    - name: github
+      url-base: git@github.com:victorandrehc
+    - name: upstream
+      url-base: https://github.com/zephyrproject-rtos
+  
+  projects:
+    - name: zephyr
+      repo-path: zephyr.git
+      revision: main
+      path: zephyr
+      west-commands: scripts/west-commands.yml
+  
+  self:
+    path: manifests/victorandrehc-manifest
+
